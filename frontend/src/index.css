@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-prece-cream font-sans text-neutral-800 antialiased;
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+:focus-visible {
+  outline-offset: 2px;
+}
+
+.prece-surface {
+  @apply rounded-2xl border border-neutral-200 bg-white shadow-sm;
+}
+
+.prece-field {
+  @apply min-h-12 w-full rounded-xl border border-neutral-300 bg-white px-3 text-sm text-neutral-800 outline-none transition;
+  @apply focus:border-prece-green focus:ring-2 focus:ring-prece-green/20;
+}
+
+.prece-label {
+  @apply mb-1.5 block text-sm font-medium text-neutral-700;
+}
+
+.prece-section-title {
+  @apply text-base font-semibold text-neutral-800;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

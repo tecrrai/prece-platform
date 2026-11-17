@@ -1,0 +1,11 @@
+target/
+node_modules/
+dist/
+*.zip
+.env
+.env.local
+.idea/
+.vscode/
+*.iml
+HELP.md
+backend/.mvn/wrapper/maven-wrapper.jar
